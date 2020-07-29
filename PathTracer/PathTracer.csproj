@@ -29,12 +29,18 @@
     </ItemGroup>
     <ItemGroup>
       <Reference Include="unknown6656.core">
-        <HintPath>..\..\Unknown6656.Core\bin\net5\unknown6656.core.dll</HintPath>
+        <HintPath>unknown6656.core.dll</HintPath>
       </Reference>
     </ItemGroup>
     <ItemGroup>
       <None Update="scene.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="unknown6656.core.deps.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="unknown6656.core.dll">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
     </ItemGroup>
 </Project>
