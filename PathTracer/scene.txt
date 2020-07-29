@@ -1,0 +1,137 @@
+﻿//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//      CD #<argb>                  Diffuse color <argb>                                                                                                    //
+//         #<aarrggbb>                                                                                                                                      //
+//      CR #<argb> <a>              Reflective color <argb> with amount <a>                                                                                 //
+//      CS #<argb> <a> <i>          Specular color <argb> with amount <a> and specular (integer) index <i>                                                  //
+//      CT #<argb> <a> <r> <g> <b>  Refractive (transmissive) color <argb> with amount <a> and refractive indices for the color channels <r>, <g> and <b>   //
+//      CG #<argb> <a>              Glow color <argb> with intensity <a>                                                                                    //
+//      P <x> <y> <z>               Position                                                                                                                //
+//      D <x> <y> <z>               Direction                                                                                                               //
+//      R <r>                       Radius                                                                                                                  //
+//      F <f>                       Light falloff                                                                                                           //
+//      S <s>                       Light sharpness0000                                                                                                     //
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//// WALLS ////
+
+Plane
+    CD #f44f
+    P -100 0   -100
+    P +100 0   -100
+    P +100 100 -100
+    P -100 100 -100
+Plane
+    CD #ff44
+    P -100 100 -100
+    P -100 100 +100
+    P -100 0   +100
+    P -100 0   -100
+Plane
+    CR #f000 .9
+    P +100 0   -100
+    P +100 0   +100
+    P +100 100 +100
+    P +100 100 -100
+Plane
+    CD #f444
+    P -100 0 +100
+    P +100 0 +100
+    P +100 0 -100
+    P -100 0 -100
+
+//// LIGHTS ////
+
+Sphere
+    CD #ffff
+    P -75 80 -25
+    R 4
+Sphere
+    CD #ffff
+    P 0 80 -25
+    R 4
+Sphere
+    CD #ffff
+    P 75 80 -25
+    R 4
+Spot
+    CG #faaf 100
+    P -75 75 -25
+    D 0 -1 0
+    F .01
+    S 1
+Spot
+    CG #fafa 100
+    P 0 75 -25
+    D 0 -1 0
+    F .01
+    S 5
+Spot
+    CG #ffaa 100
+    P 75 75 -25
+    D 0 -1 0
+    F .01
+    S 10
+Point
+    CG #ffff 10
+    P -95 5 75
+    F .1
+
+//// OBJECTS ////
+
+Sphere
+    P -75 20 -75
+    R 20
+    CS #ff80 1 1
+Sphere
+    P -25 20 -75
+    R 20
+    CT #ff80 .6 1.2 1.5 1.8
+Sphere
+    P 25 20 -75
+    R 20
+    CD #7fff
+Sphere
+    P 75 20 -75
+    R 20
+    CR #f359 .8
+
+
+
+
+Plane
+    CD #f00f
+    P 65 10 0
+    P 75 10 0
+    P 75 20 0
+    P 65 20 0
+Plane
+    CD #fff0
+    P 65 10 10
+    P 75 10 10
+    P 75 20 10
+    P 65 20 10
+Plane
+    CD #ff00
+    P 65 20 0
+    P 65 20 10
+    P 65 10 10
+    P 65 10 0
+Plane
+    CD #f0ff
+    P 75 10 0
+    P 75 10 10
+    P 75 20 10
+    P 75 20 0
+Plane
+    CD #ff0f
+    P 65 10 10
+    P 75 10 10
+    P 75 10 0
+    P 65 10 0
+Plane
+    CD #f0f0
+    P 65 20 10
+    P 75 20 10
+    P 75 20 0
+    P 65 20 0

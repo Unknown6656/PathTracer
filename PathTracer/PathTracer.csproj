@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>preview</LangVersion>
+        <PlatformTarget>x64</PlatformTarget>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <OutputPath>..\bin</OutputPath>
+        <AssemblyName>PathTracer</AssemblyName>
+        <Nullable>enable</Nullable>
+        <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+        <DefineConstants>TRACE;DOUBLE_PRECISION</DefineConstants>
+        <DocumentationFile></DocumentationFile>
+        <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+        <ApplicationIcon />
+        <OutputType>Exe</OutputType>
+        <StartupObject>PathTracer.Program</StartupObject>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+      <Compile Remove="~bak~Material.cs" />
+      <Compile Remove="~bak~Program.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="~bak~Material.cs" />
+      <Content Include="~bak~Program.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Properties\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Reference Include="unknown6656.core">
+        <HintPath>..\..\Unknown6656.Core\bin\net5\unknown6656.core.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+    <ItemGroup>
+      <None Update="scene.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+</Project>

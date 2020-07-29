@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathTracer", "PathTracer\PathTracer.csproj", "{32C159A6-8D1D-4298-B5B3-A85C23CB35AD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{69149E0E-E4B5-4210-93C8-5D5DAEEB955D} = {69149E0E-E4B5-4210-93C8-5D5DAEEB955D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderViewer", "RenderViewer\RenderViewer.csproj", "{69149E0E-E4B5-4210-93C8-5D5DAEEB955D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32C159A6-8D1D-4298-B5B3-A85C23CB35AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32C159A6-8D1D-4298-B5B3-A85C23CB35AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32C159A6-8D1D-4298-B5B3-A85C23CB35AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32C159A6-8D1D-4298-B5B3-A85C23CB35AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69149E0E-E4B5-4210-93C8-5D5DAEEB955D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69149E0E-E4B5-4210-93C8-5D5DAEEB955D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69149E0E-E4B5-4210-93C8-5D5DAEEB955D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69149E0E-E4B5-4210-93C8-5D5DAEEB955D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30DE3072-A02C-4FDC-B130-54E67F0F7982}
+	EndGlobalSection
+EndGlobal

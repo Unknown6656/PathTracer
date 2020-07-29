@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+    <PropertyGroup>
+        <UseWindowsForms>true</UseWindowsForms>
+        <OutputType>Exe</OutputType>
+        <AssemblyName>viewer</AssemblyName>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>preview</LangVersion>
+        <PlatformTarget>x64</PlatformTarget>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <OutputPath>..\bin</OutputPath>
+        <RootNamespace>PathTracer.Viewer</RootNamespace>
+        <Nullable>enable</Nullable>
+        <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+        <DefineConstants>TRACE;DOUBLE_PRECISION</DefineConstants>
+        <DocumentationFile></DocumentationFile>
+        <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    </PropertyGroup>
+</Project>
+
+
+
